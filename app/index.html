@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="#" />
+    <script src="WillowTracking.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #money-money-money {
+            background: pink;
+            height: 3em;
+            width: 30em;
+            position:absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            border-radius: 10px;
+        }
+    
+    </style>
+
+
+    <button id="money-money-money"> CLICK HERE TO GIVE ME MONEY </button>
+
+    <script>
+
+        var BTN = document.getElementById("money-money-money");
+        BTN.addEventListener("click", sendTracking);
+
+        function sendTracking (event) {
+            TR.track ({
+                type: "btn-click",
+                currentTarget: "button"
+            });
+        }
+    
+    
+    </script>
+    
+</body>
+</html>
