@@ -60,15 +60,15 @@ class WillowTracking {
 
 
 var TR = new WillowTracking({
-    baseURL:"http://159.203.116.166:3000",
+    baseURL:"http://159.203.116.166:443",
     application: "dfp-ad-events",
-    creativeID: "%ecid!",
-    lineItemID: "%eaid!",
-    orderID: "%ebuy!",
-    dfp_viewport: "%%PATTERN:vp%%",
-    pageViewID: "%%PATTERN:page_view_id%%",
-    dfp_pos: "%%PATTERN:pos%%",
-    prop: "%%PATTERN:prop%%",
+    creativeID: "6543",
+    lineItemID: "5678",
+    orderID: "1234",
+    dfp_viewport: "large",
+    pageViewID: "1234",
+    dfp_pos: "right",
+    prop: "bottom",
     method: "pixel"
 });
 
